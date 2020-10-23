@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../blockly_compressed.js"></script>
+    <script src="../blocks_compressed.js"></script>
+    <script src="../msg/js/pt-br.js"></script>
+</head>
+<body>
+    <xml id="toolbox" style="display: none">
+        <category name="Condicionais">
+          <block type="controls_if"></block>
+          <block type="controls_whileUntil"></block>
+          <block type="controls_for">
+        </category>
+        <category name="Logicos">
+          <block type="logic_compare"></block>
+          <block type="logic_operation"></block>
+          <block type="logic_boolean"></block>
+        </category>
+      </xml>
+    <div id="blocklyDiv" style="height: 480px; width: 600px;">
+      
+          <script>
+            var workspace = Blockly.inject('blocklyDiv',
+                {toolbox: document.getElementById('toolbox')});
+          </script>
+    </div>
+</body>
+</html>
